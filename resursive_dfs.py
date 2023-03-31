@@ -16,15 +16,17 @@ def recursive_dfs(graph, current_node, visited_nodes=[]):
 
 
 def main():
-    graph = {"A": ["B", "C", "D"],
-             "B": ["E"],
-             "C": ["F", "G"],
-             "D": ["H"],
-             "E": ["I"],
-             "F": ["J"]}
+    graph = {
+        "A": ["B", "C", "D"],
+        "B": ["E"],
+        "C": ["F", "G"],
+        "D": ["H"],
+        "E": ["I"],
+        "F": ["J"],
+    }
     path = recursive_dfs(graph, "A")
     print(" ".join(path))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

@@ -39,6 +39,7 @@ def pool_starmap(data):
     pool.close()
     print(results[:20])
 
+
 def futures_pool(data):
     with cf.ProcessPoolExecutor() as executor:
         results = executor.map(how_many_within_range, [row for row in data])
