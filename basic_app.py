@@ -1,3 +1,4 @@
+import sys
 import logging
 import pytest
 
@@ -11,7 +12,7 @@ class App:
         logging.basicConfig(level=logging.DEBUG)
         logging.debug("A debug message")
 
-    def main(self):
+    def app_main(self):
         print("Executing.")
         return 0
 
